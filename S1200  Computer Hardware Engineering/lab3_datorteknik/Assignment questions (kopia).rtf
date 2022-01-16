@@ -1,0 +1,93 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs32 \cf0 Assignment 1 questions:\
+		\cf2 \'95	\expnd0\expndtw0\kerning0
+Test pressing BTN3 and BTN2 at the same time. What happens? 			Why? \
+			Answer: \
+				Both values at 2 and 3 get changed to the value of the switches\
+\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Three device-registers for input/output control are TRISE, TRISESET, 			and TRISECLR.  Their functions are related. How? What are the 			differences? \
+			Answer:\
+				TRISCLR is a macro for clearing bits. TRISESET: A write of \'911\'92 				in one or more bit positions sets the corresponding bit(s) in TRISx 				register and does not affect unimplemented or read-only bits. A 				write of \'910\'92 will not affect the register.
+\fs24 \
+
+\fs32  				TRISE changes values arbitrarily.				\
+\
+		\kerning1\expnd0\expndtw0 \'95	\expnd0\expndtw0\kerning0
+In the generated assembly code, in which MIPS register will the 			return values from functions getbtns and getsw be placed in. You 			should be able to answer this question without debugging the 			generated assembly code. \uc0\u8232 			Answer:\
+				They will be placed as return values in v-registers\
+\
+		\kerning1\expnd0\expndtw0 \'95	\expnd0\expndtw0\kerning0
+In this exercise, we explained which bits that should be used in 			Port D and Port E. How can you find this information in the 			PIC32 and ChipKIT manuals? Be prepared to demonstrate how to 			find this information in the manuals.\
+			Answer:\
+				Found by searching the manuals.\
+\
+Assignment 2:\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+When the time-out event-flag is a "1", how does your code reset it to 			"0"? \
+			Answer:\
+				By using the macro to reset it\
+\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+What would happen if the time-out event-flag was not reset to "0" by 			your code? Why? \
+			Answer:\
+				There would after a while be a infinite timeout and the code will 				execute in the pace of the prescaled oscillator \
+\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Which device-register (or registers) must be written to define the time 			between time-out events? Describe the function of that register (or of 			those registers).\
+			Answer:\
+				Counter register in the device.\
+\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+If you press BTN3 quickly, does the time update reliably? Why, or 			why not? If not, would that be easy to change? If so, how? \
+			Answer:\
+				More reliably then with the delay function, I don\'92t know why 				though\
+Assignment 3:\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+When the time-out event-flag is a "1", how does your code reset it to 			"0"? \
+			Answer:\
+				Macro\
+\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+What would happen if the time-out event-flag was not reset to "0" by 			your code? Why? \
+			Answer:\
+\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+From which part of the code is the function 
+\fs26\fsmilli13333 user_isr 
+\fs32 called? Why is it 			called from there? \
+			Answer:\
+\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Why are registers saved before the call to 
+\fs26\fsmilli13333 user_isr
+\fs32 ? Why are only some 			registers saved? \
+			Answer:\
+\
+	\kerning1\expnd0\expndtw0 	\'95	\expnd0\expndtw0\kerning0
+Which device-register (or registers), and which processor-register (or 			registers) must be written to enable interrupts from the timer? Describe 			the functions of the relevant registers. \
+			Answer:\uc0\u8232 \
+\uc0\u8232 \
+\uc0\u8232 \
+\uc0\u8232 \
+\
+\uc0\u8232 \
+\uc0\u8232 \
+ \uc0\u8232 \
+\uc0\u8232 \
+\uc0\u8232 \
+\uc0\u8232 \
+\
+\
+			\uc0\u8232 \
+	\
+	
+\fs28 \uc0\u8232 
+\fs32 \
+}
